@@ -7,12 +7,11 @@ var request = require('request');
 var Twitter = require('twitter');
 var Spotify = require('spotify');
 
-// var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
+var spotify = new Spotify(keys.spotify);
 
 var userInput = process.argv;
 
-// console.log(userInput);
 if (userInput[2] === 'my-tweets') {
   getTweets();
   //create a function to get tweets
