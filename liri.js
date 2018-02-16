@@ -3,6 +3,7 @@ var inquirer = require('inquirer');
 var getTweets = require('./twitter');
 var getSpotify = require('./spotify');
 var getMovie = require('./omdb');
+var getRandom = require('./random');
 
 var userInput = process.argv;
 
@@ -16,7 +17,7 @@ var runApp = function() {
   } else if (userInput[2] === 'movie-this') {
     getMovie(runApp);
   } else if (userInput[2] === 'do-what-it-says') {
-    console.log('do-what-it-says');
+    getRandom(runApp);
   } else {
     console.log('try again');
   }
