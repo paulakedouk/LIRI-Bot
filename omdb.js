@@ -13,7 +13,7 @@ function getMovie() {
       var queryArr = [];
       for (var i = 3; i < userInput.length; i++) {
         queryArr.push(userInput[i]);
-        console.log(queryArr);
+        // console.log(queryArr);
       }
     }
   }

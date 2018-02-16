@@ -56,7 +56,6 @@ function log(tweet) {
     if (err) {
       return console.log(err);
     }
-    console.log(tweet + '\n');
   });
 }
 
