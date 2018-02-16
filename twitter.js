@@ -7,19 +7,6 @@ var client = new Twitter(keys.twitter);
 
 var userInput = process.argv;
 
-if (userInput[2] === 'my-tweets') {
-  getTweets();
-  //create a function to get tweets
-} else if (userInput[2] === 'spotify-this-song') {
-  console.log('spotify-this-song');
-} else if (userInput[2] === 'movie-this') {
-  console.log('movie-this');
-} else if (userInput[2] === 'do-what-it-says') {
-  console.log('do-what-it-says');
-} else {
-  console.log('try again');
-}
-
 function getTweets() {
   var handle = '';
 
@@ -28,7 +15,7 @@ function getTweets() {
     for (var i = 3; i < userInput.length; i++) {
       queryArr.push(userInput[i]);
       handle = queryArr.join('');
-      console.log(handle);
+      //   console.log(handle);
     }
   } else {
     handle += userInput[3];
